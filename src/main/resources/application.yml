@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties.hibernate.enable_lazy_load_no_trans: true
+
+
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/cat_toys
+    username: root
+    password: Oroosh89
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
